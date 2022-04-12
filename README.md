@@ -2,6 +2,6 @@
  portifolio em desenvolvimento.
  
  
- atualmente esta na versão 1.02
+ atualmente esta na versão 1.03
 
     https://landingportifoliodanilo.netlify.app/
