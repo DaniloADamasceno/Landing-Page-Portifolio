@@ -1,0 +1,566 @@
+:root {                                          /* para a Criação de Variaveis */
+    --primary-color: #151f30;                  /* A cor do back ground do main */
+    --White-color: #ffffff;                    /* cor Branca para ser utilizado como a cor do texto quando o backround for o white */ 
+    --Gap: 3rem;
+    --Color-Laranja :#ff7a48;                  /* Cor Laranja do Logo */
+} 
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+* {              /* Configurações Gerais da Pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+html {
+    font-size: 62.5%;            /* para converter a pagina em Rems */
+    scroll-behavior: smooth;     /* para fazer a pagina rolar lentamete */ 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+body {
+    font-family: 'Open Sans', sans-serif;                        /* Fonte Open sans para o Body do documento */ 
+    font-size: 1.5rem; 
+    color: var(--primary-color);
+    line-height: 1.8;
+    max-width: 100%;
+    min-height: 15vh;  
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Montserrat', sans-serif;                 /* Fonte Montserrat para todos os H */ 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h2 {
+    text-transform: uppercase;
+    font-size: 4rem; 
+    line-height: 1.2;
+    font-weight: bold;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h3 {
+    font-size: 3.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h4 {
+    font-size: 3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h5 {
+    font-size: 2.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h6 {
+    font-size: 2rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+a {
+    text-decoration: none;                                             /* Retira todas o sublinhado do As */
+}
+p {
+    margin-bottom:  3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Main-Background {      /* Classe do BackGround do Main */
+
+    background-color: #151F30;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(214,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23103778'/%3E%3Cstop offset='1' stop-color='%230593A2'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(133,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF7A48'/%3E%3Cstop offset='1' stop-color='%23E3371E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(-55.3 -0.7999999999999989) rotate(-4.1 1409 581) scale(0.948416)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='translate(-82 46) rotate(1.7999999999999998 800 450) scale(0.9988679999999999)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(3 -30) rotate(6 401 736) scale(0.9988679999999999)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(276 5.6) rotate(-1.4 150 345) scale(1.001472)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='translate(-52 -127) rotate(-7.200000000000003 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-141.6 34.4) rotate(-1.200000000000001 1400 132) scale(0.88)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+} 
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.White-background {                                                    /* Para deixar o backGround Branco */ 
+    background-color: var(--White-color);
+    color:var(--primary-color);
+ 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Main-Content {
+    max-width: 100%;                                                /* Largura maxima do site*/
+    margin: 0 auto;
+    min-height: 15vh;  
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Section {
+    min-height: 100vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color:var(--White-color); 
+    border-bottom: 0.1rem solid #eeeeee; 
+    background:#0593a2;    
+    z-index: 1;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu-Content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;  
+    flex-direction: column;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu-Content ul {
+    flex-direction: column;
+    justify-content: center;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu H1 {
+    font-size: 2.3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu H1 a {      
+    font-size: 4rem;                                                     /* para a Logo */
+    text-align: center;
+    color:(var(--White-color));  
+    background-color: var(--Color-Laranja);                            /* Uma cor para o logo */ 
+    border-radius: 0.5rem; 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul {                                               /* Para o menu inteiro */
+    list-style: none;
+    display: flex; 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul li a {                                          /* para o menu a Direita */
+    display: block;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul li a::after {                                   /* Para colocar uma borda no menu a direita */
+    content:'';
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--Color-Laranja);
+    transition: all 0.5s ease-in-out;  
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul li a:hover::after {                             /* para fazer a transição da borda inferior do menu a direita */ 
+    width: 50%;
+    left: 25%;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.espaçamento-menu {
+    padding: 0.5rem;
+    background-color: var(--Color-Laranja); 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Intro-Content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1rem;
+    min-height: 100vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Intro-Texto {                                                                                /* Formatar o Texto e os objetos do campo intro */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; 
+}
+.Intro-Texto h3 {
+    font-style: italic;
+    color: var(--Color-Laranja);
+    line-height: initial;
+}
+.Intro-Texto h1 {
+    color: var(--White-color);
+    text-transform: unset;
+    text-align: left;
+    font-size: bold;
+    line-height: initial;
+}
+.Intro-Texto h2 {
+    color: #0593a2;
+    font-style: italic;
+    margin-top: -5px;
+    text-transform: unset;
+    text-align: left;
+}
+.Intro-Texto h5 {
+    color: var(--White-color);
+    text-align: start;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Intro-Imagem  img {                                 /* Para a Formatação da Imagem do campo de Introdução*/ 
+   max-width: 100%;
+   min-height: 100vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.skills-titulo h2 {                                      /* Formatação do titulo Habilidades*/ 
+    text-align: center; 
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--Gap);
+    width: 100vh;
+    margin: 1rem auto;
+    margin-bottom: 12rem;
+    list-style: none; 
+    max-width: 100%;
+    min-height: 15vh;  
+}
+.skills li {
+    margin: 20px 0;
+}
+.barra {
+    background-color: #151f30;
+    display: block;
+    height: 5px;
+    border: 0.1rem solid rgba(0,0,0,0.3);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem ;
+}
+.barra span {
+    height: 50rem;
+    float: left;
+    background-color: #ff7a48;
+}
+.html {
+    width: 90%;
+    animation: html 2s;
+}
+.css {
+    width: 80%;
+    animation: html 2s;
+}
+.javascript {
+    width: 40%;
+    animation: html 2s;
+}
+.cplus {
+    width: 63%;
+    animation: html 2s;
+}
+.mql {
+    width: 49%;
+    animation: html 2s;
+}
+.arduino {
+    width: 70%;
+    animation: html 2s;
+}
+.eletrica {
+    width: 73%;
+    animation: html 2s;
+}
+.mecanica {
+    width: 83%;
+    animation: html 2s;
+}
+
+.hidraulica {
+    width: 58%;
+    animation: html 2s;
+}
+.photoshop {
+    width: 33%;
+    animation: html 2s;
+}
+.corel {
+    width: 33%;
+    animation: html 2s;
+}
+.office {
+    width: 63%;
+    animation: html 2s;
+}
+.esp {
+    width: 63%;
+    animation: html 2s;
+}
+@keyframes html {                               /* Animação da barra de Skills*/
+    0% {
+        width: 0%;
+    }
+ /*   100% {
+        width: 90%;
+        */
+    }
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+
+.Grid-Grid-One {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--Gap);
+    margin-top: 5rem;
+    counter-reset: Contador-Grid;                                    /* Para a Criação de um Contador */ 
+    padding:var(--Gap);
+    max-width: 95%;
+    min-height: 15vh;  
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Grid-Grid-One h4 {
+    position: relative;
+    font-size: 3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Grid-Grid-One article h4::before {                                 /* Incrementar um numero no inicio dos topicos */
+    counter-increment: Contador-Grid;
+    content: counter(Contador-Grid);
+    color: var(--Color-Laranja);
+    font-size: 8rem;
+    font-style: italic;
+    margin-right: 1.5rem;
+    margin-top: 5rem;
+    transform: rotate(30deg);                                       /* Para Rotacionar o numero */ 
+}
+article h5  {
+    color:#ff7a48;
+    font-style: italic;
+    padding-top: 5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Descri, .Descri-subtitulo, article h4 {
+    max-width: 120rem;                                                /* Largura maxima do site*/
+    margin: 0 auto;
+    color: var(--White-color);
+}
+article h6 {
+    color: #0593a2;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-style: italic;
+}
+article p {
+    color: var(--White-color);
+    line-height: 3;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.galeria-titulo {
+    position: relative;
+    font-size: 3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Descri-galeria {
+    font-style: italic;
+    padding-left: 2rem;
+    margin-top: -3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Fotos-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--Gap);
+    margin-top: 8rem;
+    padding: var(--Gap);
+    min-height: 15vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.galeria-1 {
+    position: relative;
+    font-size: 7.5rem;
+    margin-bottom: -3rem;
+    text-transform: uppercase;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.galeria-titulo {
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 15vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Imagem-Galeria {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Imagem-Galeria img {                                         /* para fazer a trasição a imagem */
+    transition: all 500ms ease-in-out;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Imagem-Galeria img:hover {
+    transform: translate(-3%, 3%) scale(1.3) rotate(5deg);
+} 
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Tabela-geral {
+    display: flex; 
+    min-height: 1vh;
+    flex-flow: column wrap; 
+    justify-content: center;
+    text-align: center;
+    margin: 5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+table {
+    width: 100%;
+    min-width: 36rem;
+    margin-bottom: 7.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+table td, table th {
+    white-space: nowrap;                  /* para que a tabela não quebre o texto */ 
+    padding: 1rem;
+    border: 0.1rem solid var(--primary-color);
+    border-collapse: collapse;
+    text-align: left;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+tfoot td, table th {
+    background-color: rgba(226, 225, 225, 0.842);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Tabela-responsiva {
+    overflow: hidden;
+    overflow-x: auto;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.contatos-1 a {                                           /* para alinhar o texto dentro do display Flex */
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--Gap);
+    text-transform: uppercase;  
+    color: var(--White-color);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-contato {               /* Formulario de Contato */ 
+    grid-column: span 2;
+    
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont fieldset {
+    border: 1 solid;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: var(--Gap);
+    text-transform: uppercase;
+    clear: both;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont {
+    flex: 1 1 10px;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont label {
+    display: block;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont input, .formulario-cont textarea {
+    border: none;
+    background: var(--White-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.full-width {
+    width: 100%;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont button {
+    border: 0.5rem solid darkgray;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont button:hover {
+    background-color: var(--primary-color);
+    color: var(--Color-Laranja);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+footer {
+    display: flex; 
+    min-height: 1vh;
+    flex-flow: column wrap; 
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+@media (max-width: 800px) {                  /* Média para mobile */ 
+    .Intro-Content,
+    .Grid-Grid-One, 
+    .Fotos-galeria
+    {
+        grid-template-columns: 1fr ;
+    }
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu {
+ display: none;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu {
+    display: none;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu-label::after {                /* para deixar o menu no estilo mobile*/
+    content: '≡';
+    cursor: pointer;
+    position: fixed;
+    z-index: 3;
+    top: 0.5rem;
+    right: 2rem; 
+    left: -30rem;
+    background-color: var(--primary-color);
+    color: var(--White-color);
+    font-size: 4rem;
+    line-height: 3rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu:checked ~ .Menu {
+    display: block;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu:checked~.close-menu-label::after {
+    content: 'X';
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.espaçamento-menu {                             
+    display: none;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.back-top {                            /* Menu para Voltar para o topo */
+   position: fixed; 
+   bottom: 6rem;
+   right: 6rem;
+   background-color: var(--White-color);
+   height: 5rem;
+   width: 5rem;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   border-radius: 5rem;
+   color: var(--primary-color);
+   border: 0.1rem solid var(--Color-Laranja);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */  
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */  
