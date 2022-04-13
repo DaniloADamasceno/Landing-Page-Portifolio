@@ -31,7 +31,7 @@ Atualizações do Projeto
 
  atualmente esta na versão 1.03
  
- atualização 1.02
+ atualização 1.03
  › Melhorias da area de Skill 
 
 atualização 1.02
