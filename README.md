@@ -30,19 +30,19 @@ Tecnologias utilizadas
 ______________________________________________________________________________________________________________________________________________________________
 # Atualizações de Projeto 
 
- Portfólio atualmente esta na versão 1.04
  
  
  
  *Atualização 1.04*
- > Adicionada imagem ao Readme e correções Gramaticas 
+> Adicionada imagem ao Readme e correções Gramaticais 
  
 *Atualização 1.03*
-› Melhorias da área de skills
+> Melhorias da área de skills
 
 *Atualização 1.02*
-› Melhorias em responsabilidade em dispositivos móveis 
-› Melhoria do menu 
+> Melhorias em responsabilidade em dispositivos móveis 
+>
+> Melhoria do menu 
 
 *Atualização 1.01* 
-› Atualização de pequenos bugs e a responsabilidade em dispositivos móveis
+> Atualização de pequenos bugs e a responsabilidade em dispositivos móveis
