@@ -3,15 +3,16 @@
 
  portifolio em desenvolvimento.
  
+ ![Portifolio Danilo](https://user-images.githubusercontent.com/71226047/179367986-5fd2f574-889c-4dc7-85ad-8066445261b2.jpg)
  
-  Este projeto está em desenvolvimento e foi criado para colocar em pratica os conhecimentos adquiridos em HTML, CSS e Javascript.
-  O objetivo deste projeto e o desenvolvimento de uma landing Page do tipo portfólio responsiva com a aplicação de vários estilos do CSS tais como , displays Block, grid e flex uma área dedicada a contatos.
+  Este projeto está em desenvolvimento sendo criado para colocar em prática os conhecimentos adquiridos em HTML, CSS e Javascript.
+  O objetivo deste projeto e o desenvolvimento de uma landing Page do tipo portfólio responsiva com a aplicação de vários estilos do CSS tais como, displays Block,  grid e flex uma área dedicada a contatos.
 
   
 
 o projeto encontra-se hospedado no link abaixo:
 
-    https://landingportifoliodanilo.netlify.app/
+[Portfólio](https://landingportifoliodanilo.netlify.app/)
 
 Tecnologias utilizadas 
 
@@ -27,16 +28,21 @@ Tecnologias utilizadas
 
 
 ______________________________________________________________________________________________________________________________________________________________
-Atualizações do Projeto 
+# Atualizações de Projeto 
 
- atualmente esta na versão 1.03
+ Portfólio atualmente esta na versão 1.04
  
- atualização 1.03
- › Melhorias da area de Skill 
+ 
+ 
+ *Atualização 1.04*
+ > Adicionada imagem ao Readme e correções Gramaticas 
+ 
+*Atualização 1.03*
+› Melhorias da área de skills
 
-atualização 1.02
-› Melhorias em responsabilidade em dispositivos móveis 
-› Melhoria do menu 
+*Atualização 1.02*
+› Melhorias em responsabilidade em dispositivos móveis 
+› Melhoria do menu 
 
-Atualização 1.01 
+*Atualização 1.01* 
 › Atualização de pequenos bugs e a responsabilidade em dispositivos móveis
